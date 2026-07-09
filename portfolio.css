@@ -1,0 +1,1233 @@
+/* nav section Start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Open Sans", sans-serif;
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+.logo{
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 32px;
+}
+.logo-i{
+    color: coral;
+}
+
+.logo::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 4px;
+    background: coral;
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+.logo:hover::after{
+    width: 100%;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+ul li a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: coral;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+ul li a:hover{
+    color: coral;
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+ /* nav section End */
+
+/*==================================
+ Hero Section
+===================================*/
+
+.hero-parent-root{
+    padding: 70px 0;
+    background: #fffaf8;
+}
+
+.hero-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+/*==================================
+ Hero Left
+===================================*/
+
+.hero-left{
+    flex: 1;
+}
+
+.hero-left-p-1{
+    font-size: 50px;
+    color: #666;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-left h2{
+    font-size: 62px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 20px;
+    line-height: 1.1;
+   
+}
+
+.hero-left p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.hero-left-btn-parent{
+    display: flex;
+    gap: 20px;
+}
+
+/*==================================
+ Common Button
+===================================*/
+
+.common-btn{
+    padding: 14px 34px;
+    background: coral;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.common-btn:hover{
+    transform: translateY(-5px);
+    background: #ff5722;
+    box-shadow: 0 15px 30px rgba(255,127,80,.35);
+}
+
+/*==================================
+ Outline Button
+===================================*/
+
+.outline-btn{
+    padding: 14px 34px;
+    background: transparent;
+    color: coral;
+    border: 2px solid coral;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.outline-btn:hover{
+    background: coral;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(255,127,80,.35);
+}
+
+/*==================================
+ Hero Right
+===================================*/
+
+.hero-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-right img{
+    width: 420px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 25px 50px rgba(0,0,0,.15);
+    transition: .5s;
+    mix-blend-mode: multiply;
+}
+
+.hero-right img:hover{
+    transform: scale(1.04) rotate(2deg);
+}
+
+/*==================================
+ Responsive
+===================================*/
+
+/* @media(max-width:992px){
+
+.hero-parent{
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.hero-left-btn-parent{
+    justify-content: center;
+}
+
+.hero-left h2{
+    font-size: 55px;
+}
+
+.hero-right img{
+    width: 350px;
+    height: 420px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-parent-root{
+    padding: 50px 20px;
+}
+
+.hero-left h2{
+    font-size: 42px;
+}
+
+.hero-left p{
+    font-size: 16px;
+}
+
+.hero-left-btn-parent{
+    flex-direction: column;
+}
+
+.common-btn,
+.outline-btn{
+    width: 100%;
+}
+
+.hero-right img{
+    width: 100%;
+    height: auto;
+}
+
+} */
+
+/*==================================
+    About Section
+===================================*/
+
+.about-parent{
+    padding: 100px 60px;
+    background: #fffaf8;
+    border-radius: 20px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+/*==================================
+    Heading
+===================================*/
+
+.about-parent h2{
+    font-size: 48px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.about-parent h2::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 70px;
+    height: 4px;
+    background: coral;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+
+/*==================================
+    Description
+===================================*/
+
+.about-parent > p{
+    max-width: 850px;
+    margin: 0 auto 60px;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #666;
+}
+
+/*==================================
+    Info Box Parent
+===================================*/
+
+.about-box-parent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+/*==================================
+    Info Box
+===================================*/
+
+.box{
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.box:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(255,127,80,.25);
+}
+
+.box p{
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.box h3{
+    font-size: 20px;
+    color: #222;
+    word-break: break-word;
+}
+
+/*==================================
+    Responsive
+===================================*/
+
+/* @media(max-width:992px){
+
+.about-box-parent{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.about-parent{
+    padding: 70px 40px;
+}
+
+}
+
+@media(max-width:576px){
+
+.about-parent{
+    padding: 50px 20px;
+}
+
+.about-parent h2{
+    font-size: 36px;
+}
+
+.about-parent > p{
+    font-size: 16px;
+}
+
+.about-box-parent{
+    grid-template-columns: 1fr;
+}
+
+.box{
+    padding: 25px;
+}
+
+} */
+
+/*====================================
+      WHAT I DO SECTION
+=====================================*/
+
+.what-i-do-parent{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.what-i-do-parent>h2{
+    font-size: 48px;
+    color: #222;
+    font-weight: 800;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.what-i-do-parent>h2::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: coral;
+    border-radius: 50px;
+    transform: translateX(-50%);
+}
+
+.what-i-do-parent>p{
+    max-width: 850px;
+    margin: 0 auto 70px;
+    color: #666;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/*====================================
+        CARD CONTAINER
+=====================================*/
+
+.what-i-do-card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+/*====================================
+            CARD
+=====================================*/
+
+.what-i-do-card{
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 18px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: all .4s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.what-i-do-card:hover{
+    transform: translateY(-12px);
+    border-color: coral;
+    box-shadow: 0 18px 40px rgba(255,127,80,.25);
+}
+
+/*====================================
+            ICON
+=====================================*/
+
+.what-i-do-card img{
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.icon-group{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.icon-group img{
+    width: 42px;
+    height: 42px;
+}
+
+/*====================================
+          CARD TITLE
+=====================================*/
+
+.what-i-do-card h2{
+    font-size: 24px;
+    margin-bottom: 18px;
+    color: #222;
+}
+
+/*====================================
+         CARD DESCRIPTION
+=====================================*/
+
+.what-i-do-card p{
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/*====================================
+          RESPONSIVE
+=====================================*/
+
+/* @media(max-width:992px){
+
+.what-i-do-card-container{
+    grid-template-columns: repeat(2,1fr);
+}
+
+}
+
+@media(max-width:576px){
+
+.what-i-do-parent{
+    padding: 60px 20px;
+}
+
+.what-i-do-parent>h2{
+    font-size: 36px;
+}
+
+.what-i-do-parent>p{
+    font-size: 16px;
+}
+
+.what-i-do-card-container{
+    grid-template-columns: 1fr;
+}
+
+.what-i-do-card{
+    text-align: center;
+}
+
+.what-i-do-card img{
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.icon-group{
+    justify-content: center;
+}
+
+} */
+
+/* A summary of My Resume */
+/*==================================
+    RESUME SECTION
+===================================*/
+
+.a-summary-of-my-resume-parent{
+    padding: 100px 0;
+}
+
+.a-summary-of-my-resume-parent>h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.a-summary-of-my-resume-parent>h2::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 5px;
+    background: coral;
+    border-radius: 50px;
+}
+
+/* /*==================================
+      TWO COLUMN
+===================================*/
+
+
+.column{
+    position: relative;
+    padding-left: 35px;
+}
+
+/* Timeline */
+
+.column::before{
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: rgba(255,127,80,.25);
+}
+
+
+/*==================================
+      RESUME CARD
+===================================*/
+
+.column .a-summary-of-my-resume-card,
+.column .a-summary-of-my-resume-cardcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 220px;
+    transition: all .4s ease;
+    border-radius: 8px;
+}
+
+.column .a-summary-of-my-resume-card:hover,
+.column .a-summary-of-my-resume-cardcard:hover{
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(255,127,80,.20);
+    border-radius: 10px;
+}
+
+/* Timeline Dot */
+
+.column .a-summary-of-my-resume-card::before,
+.column .a-summary-of-my-resume-cardcard::before{
+
+    content:"";
+    position:absolute;
+
+    left:-39px;
+    top:35px;
+
+    width:18px;
+    height:18px;
+
+    border-radius:50%;
+    background:coral;
+
+    border:5px solid white;
+
+    box-shadow:0 0 0 3px coral;
+}
+
+/*==================================
+       CARD HOVER
+===================================*/
+
+.column .a-summary-of-my-resume-card:hover,
+.column .a-summary-of-my-resume-cardcard:hover{
+
+    transform:translateX(12px);
+
+    box-shadow:0 20px 45px rgba(255,127,80,.18);
+
+    border-left-color:#ff5722;
+}
+
+/*==================================
+         CARD CONTENT
+===================================*/
+
+/* Two Columns */
+.a-summary-of-my-resume-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    align-items: start;
+}
+
+
+/* All Resume Cards */
+.column .a-summary-of-my-resume-card,
+.column .a-summary-of-my-resume-cardcard{
+    background: #fff;
+    padding: 30px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+
+    min-height: 200px;   /* সব card সমান height */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-left: 5px solid coral;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .4s;
+}
+
+/* Hover */
+.column .a-summary-of-my-resume-card:hover,
+.column .a-summary-of-my-resume-cardcard:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(255,127,80,.20);
+}
+
+/* Title */
+.column h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.column h4{
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+/* Subtitle */
+.column h5{
+    color: coral;
+    margin-bottom: 15px;
+}
+
+/* Description */
+.column p{
+    line-height: 1.8;
+    color: #666;
+}
+
+.column h5 span{
+
+    background:coral;
+
+    color:white;
+
+    padding:4px 10px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    margin-left:10px;
+}
+
+
+/*==================================
+      DOWNLOAD BUTTON
+===================================*/
+
+.btn-area{
+
+    margin-top:70px;
+
+    text-align:center;
+}
+
+.btn-area button{
+
+    padding:16px 42px;
+
+    border:none;
+
+    background:coral;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:.4s ease;
+
+    box-shadow:0 10px 25px rgba(255,127,80,.25);
+}
+
+.btn-area button:hover{
+
+    transform:translateY(-6px);
+
+    background:#ff5722;
+
+    box-shadow:0 18px 40px rgba(255,127,80,.35);
+}
+
+/*==================================
+      RESPONSIVE
+===================================*/
+/* 
+@media(max-width:992px){
+
+.a-summary-of-my-resume-card{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.a-summary-of-my-resume-parent h2{
+
+font-size:36px;
+
+}
+
+.column{
+
+padding-left:25px;
+
+}
+
+.column h3{
+
+font-size:28px;
+
+}
+
+.column h4{
+
+font-size:20px;
+
+}
+
+}
+ */
+
+ /*==============================
+    My Amazing Works
+==============================*/
+
+.my-amazing-parent{
+    text-align: center;
+    padding: 100px 0;
+}
+
+.my-amazing-parent h2{
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 70px;
+    position: relative;
+    display: inline-block;
+}
+
+.my-amazing-parent h2::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: coral;
+    border-radius: 50px;
+}
+
+/*==============================
+      Gallery
+==============================*/
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+    grid-auto-rows: 250px;
+
+    grid-template-areas:
+    "one two three"
+    "four two six"
+    "four five six";
+}
+
+/*==============================
+       Gallery Box
+==============================*/
+
+.gallery div{
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    cursor: pointer;
+    box-shadow: 0 12px 30px rgba(0,0,0,.12);
+    transition: all .4s ease;
+}
+
+.gallery div:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(255,127,80,.25);
+}
+
+/*==============================
+        Image
+==============================*/
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .6s ease;
+}
+
+.gallery div:hover img{
+    transform: scale(1.12);
+}
+
+/*==============================
+      Overlay
+==============================*/
+
+.gallery div::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    opacity: 0;
+    transition: .4s;
+    z-index: 1;
+}
+
+.gallery div:hover::before{
+    opacity: 1;
+}
+
+/*==============================
+      Text
+==============================*/
+
+.gallery div::after{
+    content: "View Gallery";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,30px);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0;
+    transition: .4s;
+    z-index: 2;
+}
+
+.gallery div:hover::after{
+    opacity: 1;
+    transform: translate(-50%,-50%);
+}
+
+/*==============================
+    Grid Areas
+==============================*/
+
+.box-1{
+    grid-area: one;
+}
+
+.box-2{
+    grid-area: two;
+}
+
+.box-3{
+    grid-area: three;
+}
+
+.box-4{
+    grid-area: four;
+}
+
+.box-5{
+    grid-area: five;
+}
+
+.box-6{
+    grid-area: six;
+}
+
+/*==================================
+          FOOTER SECTION
+===================================*/
+
+.footer{
+    margin-top: 100px;
+    padding: 80px 60px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 80px;
+
+    background: #fff7f2;
+    border-radius: 25px 25px 0 0;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Background Glow Effect */
+
+.footer::before{
+    content:"";
+    position:absolute;
+
+    width:250px;
+    height:250px;
+
+    background: coral;
+    opacity:.15;
+
+    border-radius:50%;
+
+    top:-100px;
+    left:-100px;
+
+    filter:blur(80px);
+}
+
+
+/*==================================
+          LEFT SIDE
+===================================*/
+
+.footer-left{
+    position:relative;
+    z-index:1;
+}
+
+
+.footer h2{
+
+    font-size:36px;
+    font-weight:800;
+
+    color:#222;
+
+    margin-bottom:20px;
+}
+
+
+.footer p{
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    color:#666;
+
+    max-width:500px;
+
+}
+
+
+/*==================================
+          SOCIAL ICON
+===================================*/
+
+.footer-icon-parent{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:35px;
+
+}
+
+
+.footer-icon-parent span{
+
+    width:55px;
+    height:55px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    background:white;
+
+    border-radius:50%;
+
+    font-size:25px;
+
+    color:coral;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.1);
+
+    transition:.4s;
+
+}
+
+
+.footer-icon-parent span:hover{
+
+    color:white;
+
+    background:coral;
+
+    transform:
+    translateY(-8px)
+    rotate(10deg);
+
+    box-shadow:
+    0 15px 30px rgba(255,127,80,.35);
+
+}
+
+
+
+/*==================================
+          FORM
+===================================*/
+
+
+.footer form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+
+.footer input,
+.footer textarea{
+
+    width:100%;
+
+    padding:16px 20px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:white;
+
+    font-size:16px;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.footer input:focus,
+.footer textarea:focus{
+
+    border:2px solid coral;
+
+    box-shadow:
+    0 0 20px rgba(255,127,80,.25);
+
+}
+
+
+
+.footer textarea{
+
+    resize:none;
+
+}
+
+
+
+/*==================================
+          BUTTON
+===================================*/
+
+
+.footer .common-btn{
+
+    width:160px;
+
+    border-radius:50px;
+
+    transition:.4s;
+
+}
+
+
+.footer .common-btn:hover{
+
+    transform:
+    translateY(-5px);
+
+    background:#ff5722;
+
+    box-shadow:
+    0 15px 30px rgba(255,127,80,.35);
+
+}
+
+
+/*==================================
+          RESPONSIVE
+===================================*/
+
+
+@media(max-width:992px){
+
+.footer{
+
+    grid-template-columns:1fr;
+
+    gap:50px;
+
+}
+
+
+}
+
+
+
+@media(max-width:576px){
+
+
+.footer{
+
+    padding:50px 25px;
+
+}
+
+
+.footer h2{
+
+    font-size:30px;
+
+}
+
+
+.footer-icon-parent{
+
+    justify-content:center;
+
+}
+
+
+}
